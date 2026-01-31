@@ -1,0 +1,62 @@
+/* CreatePost.css */
+
+.create-post-card {
+  background: #fff;
+  border-radius: 16px;
+}
+
+.create-post-card h3 {
+  color: #ff4d8d;
+}
+
+.btn-pink {
+  background: linear-gradient(135deg, #ff4d8d, #ff7ab6);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-pink:hover {
+  opacity: 0.9;
+}
+
+.btn-outline-pink {
+  border: 1px solid #ff4d8d;
+  color: #ff4d8d;
+  background: transparent;
+}
+
+.btn-outline-pink:hover {
+  background: #ff4d8d;
+  color: white;
+}
+
+.empower-switch .form-check-input:checked {
+  background-color: #ff4d8d;
+  border-color: #ff4d8d;
+}
+
+.editor-container {
+  background: #fff7fb;
+  border: 1px solid #ffd6e5;
+  border-radius: 12px;
+}
+
+.attachment-preview {
+  border: 1px dashed #ffb3d1;
+  background: #fff;
+}
+
+.attachment-preview img,
+.attachment-preview video {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.post-media img,
+.post-media video {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}

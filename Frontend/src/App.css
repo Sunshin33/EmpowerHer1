@@ -1,0 +1,119 @@
+
+.navbar {
+  background-color: #d63384;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.page h1 {
+  color: #d63384;
+  font-size: 2.5rem;
+}
+
+.page p {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.join-page {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.join-form {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.join-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.join-form input:focus {
+  border-color: #d63384;
+  outline: none;
+  box-shadow: 0 0 5px rgba(214, 51, 132, 0.3);
+}
+
+.join-form button {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-form button:hover {
+  background-color: #b82d70;
+}
+.home-page {
+  background-image: url("C:\Users\Kwaeza Alex\empowerher\public\images\home-bg.jpg");
+  background-size: cover;        
+  background-position: center;  
+  background-repeat: no-repeat;  
+  height: 100vh;                 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      
+  align-items: center;           
+  color: white;                  
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Optional: Add a semi-transparent overlay */
+.home-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 0;
+}
+
+/* Make sure text appears above overlay */
+.home-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+.user-layout {
+  padding-top: 80px; /* adjust to navbar height */
+}

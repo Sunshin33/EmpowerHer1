@@ -1,0 +1,136 @@
+/* Base pink button */
+.btn-arch {
+  background-color: #ae49b0 !important;
+  border: none !important;
+  color: white;
+  transition: all 0.3s ease !important; 
+}
+
+.btn-arch:hover {
+  background-color: #5c325c !important;
+  transform: translateY(-2px)  !important;
+  box-shadow: 0 6px 16px rgba(157, 20, 255, 0.35) !important;
+}
+
+.btn-pink {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-pink:hover {
+  background-color: #ff1493;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 20, 147, 0.35);
+}
+
+/* Optional: active (click) */
+.btn-pink:active {
+  transform: scale(0.97);
+}
+
+.dashboard-page {
+  min-height: 100vh;
+  background-image: url("../assets/images/pin.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 40px;
+}
+
+.dashboard-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 240, 248, 0.85);
+  z-index: -1;
+}
+
+.dashboard-page {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Glassy cards effect */
+.dashboard-page .card {
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.95);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dashboard-page h5 {
+  letter-spacing: 0.3px;
+}
+
+/* Center empty states */
+.dashboard-page .fst-italic {
+  opacity: 0.8;
+}
+
+/* Soft badge styling */
+.badge {
+  border-radius: 999px;
+  background: rgba(255, 20, 147, 0.1) !important;
+  color: #ff1493 !important;
+  font-weight: 500;
+}
+
+/* ===== RECENT POSTS CARD UPGRADE ===== */
+
+.recent-post-card {
+  padding: 14px 6px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.recent-post-card:last-child {
+  border-bottom: none;
+}
+
+.recent-post-card:hover {
+  background: rgba(255, 20, 147, 0.04);
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Title */
+.recent-post-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Preview text */
+.recent-post-preview {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+/* Reactions row */
+.recent-post-reactions {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+
+/* Stat cards hover */
+.dashboard-page .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+

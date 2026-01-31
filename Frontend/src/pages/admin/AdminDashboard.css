@@ -1,0 +1,40 @@
+.admin-dashboard {
+  min-height: 100vh;
+  background-color: #da8ab5;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.admin-dashboard::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 245, 252, 0.9);
+  z-index: -1;
+}
+
+.admin-title {
+  color: #60103b;
+}
+
+.stat-card {
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  background: white;
+}
+
+.stat-card h6 {
+  color: #ff1493;
+  margin-bottom: 6px;
+}
+
+.stat-card h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.table th {
+  color: #60103b;
+}

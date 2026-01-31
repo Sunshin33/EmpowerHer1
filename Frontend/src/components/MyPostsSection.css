@@ -1,0 +1,148 @@
+.my-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: start;
+  padding: 10px;
+}
+
+/* ===== POST CARD ===== */
+.post-card-modern {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: none;
+  background: #fff;
+}
+
+.post-card-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== MEDIA ===== */
+.post-media-modern {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.post-media-modern:hover {
+  transform: scale(1.02);
+}
+
+.file-preview-modern {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8f9fc, #f1f3f9);
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.file-preview-modern:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.file-icon {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+/* ===== POST BODY ===== */
+.post-body-modern {
+  padding: 14px 16px;
+}
+
+.post-header-modern {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.post-title-modern {
+  color: #ff4d8d;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.post-caption-modern {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.post-meta-modern {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-bottom: 8px;
+}
+
+/* ===== REACTIONS ===== */
+.post-reactions-modern {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+
+.reaction-button {
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  transition: all 0.15s ease;
+}
+
+.reaction-button:hover {
+  background-color: #ffe1ee;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(206, 81, 148, 0.25);
+}
+
+/* ===== ACTIONS ===== */
+.post-actions-modern {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.post-action {
+  background-color: #e7a6bd !important;
+  border: none !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+
+.post-action:hover {
+  background-color: #ff4d8d !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+
+.btn-del:hover {
+  background-color: #b30059;
+  color: #fff;
+}
+
+/* ===== CLICKABLE TITLE ===== */
+.clickable-title {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.clickable-title:hover {
+  text-decoration: underline;
+}

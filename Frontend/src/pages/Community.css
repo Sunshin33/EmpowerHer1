@@ -1,0 +1,84 @@
+/* ================= COMMUNITY PAGE ================= */
+
+.community-page {
+  min-height: 100vh;
+  background-image: url("../assets/images/healing.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 80px 10%;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+
+
+.community-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= HEADER ================= */
+
+.community-header {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ff0084;
+  font-size: 1.6rem;
+  
+}
+
+/* ================= COMMUNITY FEED ================= */
+
+.community-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  align-items: start;   
+}
+
+/* ================= POST CARD ================= */
+
+.community-feed .post-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 0;              /* ✅ REMOVE BIG EMPTY SPACE */
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.post-card h3 {
+  color: #d81b60;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  color: #1f1e1e;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .community-page {
+    padding: 60px 6%;
+  }
+
+  .community-header h1 {
+    font-size: 1.9rem;
+  }
+}

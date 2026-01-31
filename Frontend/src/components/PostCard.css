@@ -1,0 +1,234 @@
+/* ================= ROOT CARD ================= */
+
+.post-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: none;
+  overflow: hidden;
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.06),
+    0 12px 28px rgba(255, 77, 141, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 18px rgba(0,0,0,0.08),
+    0 16px 36px rgba(255, 77, 141, 0.12);
+}
+
+/* ================= HEADER ================= */
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 18px 8px;
+}
+
+.post-author-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.post-author-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #ff4d8d;
+}
+
+.post-date {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.post-kebab-wrapper {
+  position: relative;
+}
+
+.post-kebab {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 4px 8px;
+  user-select: none;
+}
+
+.post-kebab-menu {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 100;
+  min-width: 160px;
+}
+
+.kebab-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.kebab-item:hover {
+  background: #f5f5f5;
+}
+
+.kebab-item.danger {
+  color: #d9534f;
+}
+
+/* ================= MEDIA ================= */
+
+.post-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.post-media-preview {
+  max-width: 100%;
+  max-height: 420px;
+  border-radius: 14px;
+  object-fit: contain;
+  background: #fff0f6;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
+}
+
+/* ================= FILE PREVIEW ================= */
+
+.file-preview {
+  padding: 20px;
+  background: #f9fafc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.file-preview .file-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.file-preview .file-hint {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+/* ================= BODY ================= */
+
+.post-body {
+  padding: 14px 18px 42px; /* EXTRA bottom space for pinned counts */
+}
+
+/* ================= TITLE ================= */
+
+.post-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ff4d8d;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.post-title:hover {
+  color: #c9376d;
+}
+
+/* ================= CAPTION ================= */
+
+.post-caption {
+  position: relative;  
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  overflow: hidden;
+  max-height: 120px;
+  transition: max-height 0.25s ease;
+}
+
+
+.post-caption.expanded {
+  max-height: 2000px; /* big enough to fit long text */
+}
+
+
+/* ================= REACTIONS ================= */
+
+.post-reactions-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  
+}
+
+.reaction-button {
+  border-radius: 999px !important;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  background-color: #ffe0ee !important;
+  border: none !important;
+  color: #aa3d73 !important;
+  transition: transform 0.15s ease;
+}
+
+.reaction-button:hover {
+  transform: translateY(-2px);
+}
+
+/* ACTIVE REACTION (for toggle UI) */
+.reaction-button.active {
+  background-color: #ffb6d5 !important;
+  color: #7a1f4d !important;
+  box-shadow: 0 4px 10px rgba(255,105,180,0.25);
+}
+
+/* ================= ENGAGEMENT COUNTS (BOTTOM RIGHT) ================= */
+
+.post-engagement {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+
+  display: flex;
+  gap: 10px;
+  font-size: 0.7rem;
+  color: #999;
+  pointer-events: none; 
+}
+
+
+/* ================= OWNER ACTIONS ================= */
+
+.post-actions-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.post-action,
+.btn-del {
+  border-radius: 20px !important;
+  padding: 4px 12px !important;
+}
+
+/* ================= GRADIENT FADE ================= */
+
+.post-caption:not(.expanded)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    #ffffff
+  );
+  pointer-events: none;
+}

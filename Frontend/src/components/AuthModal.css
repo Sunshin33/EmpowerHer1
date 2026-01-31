@@ -1,0 +1,167 @@
+/* BACKDROP */
+.modal-backdrop.show {
+  opacity: 0.65;
+  background-color: #000;
+}
+
+/* MODAL WRAPPER */
+.auth-modal .modal-content {
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  background: #fffafc;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* HEADER */
+.auth-modal .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.auth-modal .modal-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #d81b60;
+}
+
+.auth-modal .btn-close {
+  filter: opacity(0.6);
+}
+
+/* Base button */
+.auth-btn {
+  background-color: #ff69b4 !important;
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.auth-btn:hover {
+  background-color: #ff1493 !important;
+}
+
+/* Active (click) */
+.auth-btn:active {
+  background-color: #c8006a !important;
+  transform: scale(0.97);
+}
+
+/* Loading / disabled state */
+.auth-btn:disabled,
+.auth-btn.disabled {
+  background-color: #ff9ccf !important;
+  color: white !important;
+  opacity: 1 !important;   /* stop Bootstrap fade */
+  cursor: not-allowed;
+}
+
+/* TABS */
+.auth-modal .nav-tabs {
+  border-bottom: none;
+  margin-top: 12px;
+}
+
+.auth-modal .nav-tabs .nav-link {
+  color: #c2185b;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  margin-right: 6px;
+}
+
+.auth-modal .nav-tabs .nav-link.active {
+  background-color: #ff69b4;
+  color: #ffffff;
+}
+
+/* BODY */
+.auth-modal .modal-body {
+  padding-top: 15px;
+}
+
+/* INPUTS */
+.auth-modal .form-control {
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 15px;
+}
+
+.auth-modal .form-control:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.25);
+}
+
+/* CHECKBOX */
+.auth-modal .form-check-label {
+  font-size: 14px;
+  color: #444;
+}
+
+/* FILE INPUT */
+.auth-modal input[type="file"] {
+  font-size: 14px;
+}
+
+/* BUTTON */
+.auth-modal .btn-primary {
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.auth-modal .btn-primary:hover {
+  background-color: #ff1493;
+}
+
+.auth-modal .btn-primary:active {
+  background-color: #d81b60 !important; /* darker pink */
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(216, 27, 96, 0.4);
+}
+
+/* FOCUS (after click) */
+.auth-modal .btn-primary:focus,
+.auth-modal .btn-primary:focus-visible {
+  background-color: #ff1493;
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.35);
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .auth-modal .modal-content {
+    padding: 6px;
+  }
+
+  .auth-modal .modal-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Checkbox box */
+.auth-modal .form-check-input {
+  cursor: pointer;
+  border-color: #ff69b4;
+}
+
+/* Checked state */
+.auth-modal .form-check-input:checked {
+  background-color: #ff69b4;
+  border-color: #ff69b4;
+}
+
+/* Focus ring */
+.auth-modal .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 105, 180, 0.35);
+  border-color: #ff69b4;
+}
+
+/* Hover effect */
+.auth-modal .form-check-input:hover {
+  border-color: #ff1493;
+}

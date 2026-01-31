@@ -1,0 +1,172 @@
+/* Sticky Back Header */
+.reader-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 12px 20px;
+}
+
+.reader-back-btn {
+  background: none;
+  border: none;
+  color: #d63384;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.reader-back-btn:hover {
+  color: #881e53;
+}
+
+/* Main Container */
+.reader-container {
+  max-width: 880px;
+  margin: 60px auto;
+  padding: 0 20px 100px;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #fff;
+}
+
+/* Header */
+.reader-header {
+  margin-bottom: 10px;
+}
+
+/* Title */
+.reader-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.25;
+  color: #111;
+}
+
+/* Meta */
+.reader-meta {
+  color: #666;
+  font-size: 0.95rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.reader-author {
+  font-weight: 600;
+  color: #333;
+}
+
+.reader-date {
+  color: #777;
+}
+
+.meta-dot {
+  opacity: 0.6;
+}
+
+/* Divider */
+.reader-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 28px 0 36px;
+}
+
+/* Hero Media */
+.reader-hero-image,
+.reader-hero-video {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* File attachment */
+.reader-file {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 14px 18px;
+  border-radius: 6px;
+  margin-bottom: 32px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.reader-file a {
+  color: #d63384;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.reader-file a:hover {
+  text-decoration: underline;
+}
+
+/* Content */
+.reader-content {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #222;
+  word-break: break-word;
+}
+
+/* Editorial typography */
+.reader-content h1,
+.reader-content h2,
+.reader-content h3 {
+  margin: 48px 0 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.reader-content p {
+  margin-bottom: 22px;
+}
+
+.reader-content ul,
+.reader-content ol {
+  margin: 20px 0 28px 24px;
+}
+
+.reader-content li {
+  margin-bottom: 8px;
+}
+
+/* Blockquotes */
+.reader-content blockquote {
+  border-left: 3px solid #d63384;
+  padding-left: 18px;
+  color: #444;
+  font-style: italic;
+  margin: 36px 0;
+  background: #fff7fb;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 4px;
+}
+
+/* Images inside content */
+.reader-content img {
+  max-width: 100%;
+  margin: 32px 0;
+  border-radius: 4px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .reader-title {
+    font-size: 2.1rem;
+  }
+
+  .reader-content {
+    font-size: 1.05rem;
+  }
+
+  .reader-sticky-header {
+    padding: 10px 14px;
+  }
+}
