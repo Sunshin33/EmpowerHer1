@@ -15,7 +15,8 @@ const app = express();
 /* ================= SECURITY ================= */
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://your-frontend-domain.com", // 🔴 CHANGE THIS AFTER DEPLOY
+  "http://localhost:5000",
+  process.env.FRONTEND_URL || "https://your-frontend-domain.com", // 🔴 Set FRONTEND_URL in .env
 ];
 
 const apiLimiter = rateLimit({
